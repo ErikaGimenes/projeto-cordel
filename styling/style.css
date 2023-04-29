@@ -1,0 +1,109 @@
+@chartset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root { /* aqui vc coloca as fonts que vc pega do google por ex e nomeia para ficar mais facil de colocar no seu site */
+    --font1: verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font1);
+}
+
+html, body {
+    min-height: 100vh; /* aqui vc esta colocando que o conteudo tem que aparecer na tela inteira, no caso da view port*/
+    background-color: grey;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 10vw; /* o vw siginfica que a letra vai ficar 10% do tamanho da view port na largura */
+    font-variant: small-caps; /* deixa em letra maiscula, mas de jeito mais delicado*/  
+}
+
+header > p {
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ header a:hover {
+    text-decoration: underline;
+ }
+
+ section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-family: var(--font3);
+ }
+
+ section.normal {
+    font-family: var(--font2);
+    background-color: white;
+ }
+
+ section.imagem {
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed; /* esse faz com que a foto nao role e o texto fica por cima da imagem */
+ }
+
+ section.imagem pre {
+    background-color: rgba(0, 0, 0, 0.493); /* aqui pra adcionar a box atras do texto*/
+    display: inline-block; /* aqui vc coloca pra ficar inline para que paragrafo deixe ser uma block-level, usei esse elemento para que a cor de fundo nao cobrisse a box inteira, e so em volta do texto */
+    color: white;
+    text-shadow: 1px 1px 0px 1px black;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+ footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ }
+
+ footer a:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+ }
+
+ 
+
+
